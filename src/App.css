@@ -1,0 +1,86 @@
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+button {
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #65040d;  
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+
+.App {
+  background-color: #eaebed;  
+  font-family: "Roboto", Arial, sans-serif;
+
+}
+
+h1 {
+  color: #007bff; 
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.search-form {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+
+ @media (min-width: 768px) {
+  .container, .container-md, .container-sm {
+      max-width: 100% !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .container, .container-sm {
+      max-width: 100% !important;
+  }
+}
+
+.text-color {
+  --bs-text-opacity: 1;
+  color: #2463EB !important;
+  padding-top: 20px;
+}
+
+.btn-info{
+  color: #ffffff !important;
+  background-color: #2463EB !important;
+}
+
+.btn-info:hover{
+  background-color: #0338a9 !important;
+}

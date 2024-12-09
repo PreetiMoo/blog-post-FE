@@ -1,0 +1,16 @@
+.search-form .form-control,
+.search-form .form-select {
+  border-radius: 8px;
+}
+
+.search-form button {
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .search-form .col-md-3,
+  .search-form .col-md-6 {
+    width: 100%;
+  }
+}
+
