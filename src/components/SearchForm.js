@@ -11,7 +11,7 @@ const SearchForm = ({ setFilters, clearFilters }) => {
   useEffect(() => {
     const fetchAuthors = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/authors');
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/authors`);
         setAuthorList(response.data);
       } catch (error) {
         console.error('Error fetching authors:', error);

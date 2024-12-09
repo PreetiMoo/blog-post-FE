@@ -18,8 +18,8 @@ const AppContent = () => {
       const isFilterApplied = Object.values(filters).some((filter) => filter);
 
       const endpoint = isFilterApplied
-        ? `http://localhost:5000/api/search?${new URLSearchParams(filters).toString()}`
-        : `http://localhost:5000/api/posts/`;
+        ? `${process.env.REACT_APP_API_URL}/search?${new URLSearchParams(filters).toString()}`
+        : `${process.env.REACT_APP_API_URL}/posts/`;
 
       const response = await axios.get(endpoint);
       setPosts(response.data);
